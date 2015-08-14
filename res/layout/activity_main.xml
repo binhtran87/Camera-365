@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    android:id="@+id/RootView"
+    tools:context="com.tran.camera365days.MainActivity" >
+
+    <TextView
+        android:id="@+id/txtMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#FAFAFA"
+        android:text="@string/camera_365"
+        android:textAppearance="@menu/main" />
+    <!--  divider -->
+    <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FBFBEF" >
+        
+    </View> -->
+    <ListView
+	    android:id="@+id/lstItemView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+	    android:layout_below="@+id/txtMenu"
+	    android:listSelector="@android:color/holo_orange_light" />
+
+
+</RelativeLayout>

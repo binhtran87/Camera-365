@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+   <com.tran.camera365days.util.CropImageView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+          
+     <!-- Top bar -->
+     <RelativeLayout
+        android:id="@+id/area2"
+        android:layout_width="34dp"
+        android:layout_height="match_parent"     
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#000"
+        android:orientation="vertical" >
+
+         <Button
+             android:id="@+id/save_button"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:layout_marginTop="50dp"
+             android:layout_alignParentTop="true"
+             android:background="@layout/save_button_style" />
+
+         <Button
+             android:id="@+id/back_button"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:layout_marginBottom="160dp"
+             android:background="@layout/back_button_style"/>
+
+      </RelativeLayout>
+      
+      <RelativeLayout
+         android:id="@+id/toolbar"
+         android:layout_width="80dp"
+         android:layout_height="match_parent"
+         android:layout_toLeftOf="@+id/area3"
+         android:background="#34495e"      
+         android:orientation="vertical"
+         android:visibility="visible">
+
+         <ListView
+           android:id="@+id/list"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:divider="@null"
+           android:dividerHeight="0dp"
+           android:background="#34495e" >
+        </ListView>
+  	    
+     </RelativeLayout>
+    
+      <!-- Bottom bar -->
+     <RelativeLayout
+        android:id="@+id/area3"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/rotate_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@layout/rotate_button_style" />
+
+        <Button
+            android:id="@+id/crop_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="90dp"
+            android:layout_centerHorizontal="true"
+            android:background="@layout/crop_button_style" />
+
+        <Button
+            android:id="@+id/effect_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@layout/magic_button_style" />
+
+     </RelativeLayout>
+            
+</RelativeLayout>
