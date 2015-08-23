@@ -6,6 +6,6 @@ For further information, please access this site:
 https://www.facebook.com/camera365days
 
 Try here:
-https://play.google.com/store/apps/details?id=com.tran.camera365days
+https://play.google.com/store/apps/details?id=com.funny.camera365days
 
 
